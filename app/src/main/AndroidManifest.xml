@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nguyen.tam.learnchina">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nguyen.tam.learnchina.NguPhapCoBan"
+            android:theme="@style/ThemeNguPhapCoBan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nguyen.tam.learnchina.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nguyen.tam.learnchina.T100ThanhNguThongDung"
+            android:theme="@style/Thame100ThanhNguThongDung">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nguyen.tam.learnchina.T100ThanhNguThongDung" />
+        </activity>
+        <activity
+            android:name="com.nguyen.tam.learnchina.T100TuVugCapToc"
+            android:theme="@style/Thame100TuVungCapToc">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nguyen.tam.learnchina.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nguyen.tam.learnchina.CaiDat"
+            android:theme="@style/ThemeCaiDat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nguyen.tam.learnchina.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.nguyen.tam.learnchina.XemNoiDungNguPhap"
+            android:theme="@style/ThemeXemNguPhap">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nguyen.tam.learnchina.NguPhapCoBan" />
+        </activity>
+        <activity android:name="com.nguyen.tam.learnchina.AcHoiThoai" />
+        <activity android:name="com.nguyen.tam.learnchina.SimsimiActyvity" />
+        <activity
+            android:name="com.nguyen.tam.learnchina.PhienAmActivity"
+            android:theme="@style/ThemePhienAm">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nguyen.tam.learnchina.NguPhapCoBan" />
+        </activity>
+        <activity
+            android:name="com.nguyen.tam.learnchina.Activity_10_BaiHoiThoaiCoBan"
+            android:theme="@style/Theme10BaiDamThoai">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nguyen.tam.learnchina.NguPhapCoBan" />
+        </activity>
+        <activity
+            android:name="com.nguyen.tam.learnchina.Activity50_CauDamThoai"
+            android:theme="@style/Theme50CauDamThoai">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nguyen.tam.learnchina.NguPhapCoBan" />
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
+    </application>
+
+</manifest>
